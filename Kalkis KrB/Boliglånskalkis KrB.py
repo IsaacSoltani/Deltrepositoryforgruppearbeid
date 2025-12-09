@@ -30,10 +30,10 @@ kjopesum = float(input("Kjøpesum på boligen (kr): "))
 egenkapital = float(input("Egenkapital (kr): "))
 samlet_inntekt = float(input("Samlet årsinntekt (kr før skatt): "))
 samlet_gjeld = float(input("Samlet gjeld fra før (kr): "))
-antall_lanetakere = int(input("Antall lånetakere (f.eks 1 eller 2): "))
-sivilstatus = input("Sivilstatus (gift/ugift): ").strip().lower()
-har_barn = input("Har du/dere barn? (ja/nei): ").strip().lower()
-har_bil = input("Har du/dere bil? (ja/nei): ").strip().lower()
+antall_lanetakere = int(input("Antall lånetakere (f.eks 1/2/3 etc.): "))
+sivilstatus = input("Sivilstatus (Gift/Ugift/Samboer): ").strip().lower()
+har_barn = input("Har du/dere barn? (Ja/Nei): ").strip().lower()
+har_bil = int(input("Har du/dere bil? (f.eks. 1/2/3 etc.): ").strip().lower())
 
 """
 2. REGNER UT LÅNEBEHOV
@@ -80,7 +80,7 @@ print("\n--- Kort om situasjonen din ---")
 print(f"Antall lånetakere: {antall_lanetakere}")
 print(f"Sivilstatus: {sivilstatus.capitalize()}")
 print(f"Barn: {har_barn.capitalize()}")
-print(f"Bil: {har_bil.capitalize()}")
+print(f"Bil: {har_bil()}")
 
 """4. BEREGNER MÅNEDLIG TERMINBELØP
 -----------------------------------------------
