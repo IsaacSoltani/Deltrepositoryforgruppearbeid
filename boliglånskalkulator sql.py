@@ -1,5 +1,5 @@
 """
-Boliglånskalkulator - Forelesningsøkt 8.12.2025
+Boliglånskalkulator - Test
 
 -----------------------------------------------
 
