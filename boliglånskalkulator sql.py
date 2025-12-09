@@ -43,6 +43,10 @@ sivilstatus = input("Sivilstatus (Skriv 'gift' eller 'ugift'): ").strip().lower(
 
 har_barn = int(input("Har du / dere barn? (antall): "))
 har_bil = input("Har du/dere bil? (ja/nei): ").strip().lower()
+if har_bil == "ja":
+    har_bil = True
+else:
+    har_bil = False
 
 
 print("\nSteg 2: Regner ut lånebehov")
