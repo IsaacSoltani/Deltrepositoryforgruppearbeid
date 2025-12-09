@@ -113,7 +113,7 @@ if lanebehov > 0:
     # Terminbeløp: L * r / (1 - (1+r)^(-n))
 
     if mnd_rente > 0:
-        terminbelop = lanebehov * mnd_rente / (1 - (1 + mnd_rente) ** (antall_mnd))
+        terminbelop = lanebehov * mnd_rente / (1 - (1 + mnd_rente) ** (-antall_mnd))
     else:
         # Hvis renten av en eller annen grunn er 0
         terminbelop = lanebehov / antall_mnd
