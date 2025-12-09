@@ -41,7 +41,7 @@ antall_lanetakere = int(input("Antall lånetaker (f.eks 1 eller 2): "))
 
 sivilstatus = input("Sivilstatus (Skriv 'gift' eller 'ugift'): ").strip().lower()
 
-har_barn = input("Har du / dere barn? (ja/nei): ").strip().lower()
+har_barn = int(input("Har du / dere barn? (antall): "))
 har_bil = input("Har du/dere bil? (ja/nei): ").strip().lower()
 
 
